@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="ro">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Ral Infos — Cyber Awareness Demo</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <h1>Ral Infos</h1>
+  <nav>
+    <button id="btn-login">Log In</button>
+    <button id="btn-signup">Sign Up</button>
+    <button id="btn-logout" style="display:none">Logout</button>
+  </nav>
+</header>
+
+<main>
+  <section class="profile-section">
+    <h2>Profil</h2>
+    <div id="profile">
+      <img id="profile-avatar" src="assets/avatar-default.png" alt="Avatar">
+      <div id="profile-name">Neautentificat</div>
+      <div id="profile-desc">Fă login sau înregistrează-te pentru a crea profil</div>
+      <button id="btn-edit-profile" style="display:none">Editează profilul</button>
+    </div>
+    <div id="edit-profile-form" style="display:none">
+      <input type="text" id="inp-name" placeholder="Nume utilizator">
+      <textarea id="inp-desc" placeholder="Descriere"></textarea>
+      <input type="file" id="inp-avatar">
+      <button id="btn-save-profile">Salvează profil</button>
+      <button id="btn-cancel-profile">Anulează</button>
+    </div>
+  </section>
+
+  <section class="chat-section">
+    <h2>Chat demo</h2>
+    <div id="chat-window"></div>
+    <div class="chat-input-area">
+      <input type="text" id="chat-input" placeholder="Scrie mesaj..." disabled>
+      <button id="btn-send" disabled>Trimite</button>
+    </div>
+  </section>
+
+  <section class="background-section">
+    <h2>Alege background</h2>
+    <img class="bg-choice" src="assets/bg1.jpg">
+    <img class="bg-choice" src="assets/bg2.jpg">
+    <img class="bg-choice" src="assets/bg3.jpg">
+  </section>
+</main>
+
+<div id="modal" class="modal">
+  <div class="modal-content">
+    <span id="modal-close">&times;</span>
+    <div id="modal-body"></div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
